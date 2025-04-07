@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amit Rathod-Portfolio</title>
+  <link rel="shortcut icon" href="Man_In_Shirt_Avatar-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="Porfolio-Style.css" />
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+          <div class="logo" style="display: flex;justify-content: space-evenly;align-items: center;">
+          <img src="WhatsApp Image 2025-04-07 at 1.45.19 PM.jpeg" alt="" height="80px" style="border-radius: 50%;box-shadow: 0px 0px 10px #ff7b00;">
+          <h1 class="logo" style="padding-left: 5px;">Amit Rathod</h1>
+        </div>
+          <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Hamburger -->
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+      
+        menuToggle.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+      </script>
+      
+  <section id="hero">
+    <div class="container hero-content">
+      <h1>👋 Hey, I'm <span class="name">Amit Rathod</span></h1>
+      <p class="subtitle">Frontend Developer • UI/UX Designer</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <img src="WhatsApp Image 2025-04-07 at 11.49.41 AM.jpeg" alt="Profile" class="profile-img"/>
+      <div>
+        <p>
+          I'm a passionate frontend developer with a knack for crafting clean, beautiful, and user-friendly interfaces. I love turning ideas into reality with code and design.
+        </p>
+        <p>
+          Skilled in HTML, CSS, JavaScript, and modern frameworks. Always learning and leveling up my skills.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>✨ Portfolio Website</h3>
+        <p>A sleek, modern portfolio made with HTML, CSS, and animations.</p>
+      </div>
+      <div class="project-card">
+        <h3>📱 Web App UI</h3>
+        <p>Interactive mobile UI design prototype built in Figma & implemented in HTML/CSS.</p>
+      </div>
+      <div class="project-card">
+        <h3>📊 Dashboard Design</h3>
+        <p>Responsive admin dashboard layout with custom charts and graphs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2 class="section-title">⚙️Skills</h2>
+    <div class="project-card skills">
+        <p>HTML5 • CSS3 • Bootstrap • Javascript • ReactJs</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with 💖 by Amit Rathod &copy; 2025</p>
+  </footer>
+  
+  
+</body>
+</html>
